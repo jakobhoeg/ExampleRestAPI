@@ -1,0 +1,6 @@
+To build:
+docker build -t restapitest -f Dockerfile .
+
+
+To run the server:
+docker run --rm --name restapitest -p 5000:5106 restapitest

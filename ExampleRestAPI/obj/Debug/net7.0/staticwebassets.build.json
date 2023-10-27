@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bwAPOv/XMnwAqKClRhK2HN39nOcwDjFKEqu6uJ79xq4=",
+  "Source": "ExampleRestAPI",
+  "BasePath": "_content/ExampleRestAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
