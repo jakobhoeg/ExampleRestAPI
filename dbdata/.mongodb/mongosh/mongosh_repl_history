@@ -1,3 +1,24 @@
+db.Student.find().pretty()
+show collections
+use mongodb
+db.Student.find().pretty()
+show collections
+show collection
+use mongodb
+db.Student.find().pretty()
+show collections
+use mongodb
+db.Student.find().pretty()
+show collections
+use mongodb
+db.Student.find().pretty()
+show collections
+db.Student.find().pretty()
+db.createCollection('Student')
+show collections
+use mongodb
+show collections
+use mongodb
 show collections
 use mongodb
 db.Student.find()
