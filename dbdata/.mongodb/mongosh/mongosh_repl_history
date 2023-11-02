@@ -1,0 +1,7 @@
+show collections
+use mongodb
+db.Student.find()
+show collections
+use mongodb
+show collections
+use mongodb

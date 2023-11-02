@@ -1,9 +1,14 @@
 To build:
-docker build -t restapitest -f Dockerfile .
+docker build -t restapi -f Dockerfile .
 
 
 To run the server:
-docker run --rm --name restapitest -p 5000:5106 restapitest
+docker run --rm --name restapi -p 5000:5106 restapi
 
 
 https://restapitest2023.onrender.com/student/3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+
+compose:
+
+docker-compose up -d
