@@ -1,3 +1,7 @@
+using ExampleRestAPI;
+using ExampleRestAPI.Model;
+using ExampleRestAPI.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IStudentRepository, StudentRepository>();
+
+builder.Services.Configure<MongoDBRestSettings>(builder.Configuration.GetSection(nameof(MongoDBRestSettings)));
+
+
 
 var app = builder.Build();
 
@@ -39,48 +47,5 @@ app.MapGet("/student/{id}", (Guid id, IStudentRepository sr) =>
 app.Run();
 
 
-public interface IStudentRepository
-{
-    void Add(Student student);
-
-    public Student? Get(Guid id);
-}
-
-
-public class StudentRepository : IStudentRepository
-{
-    private List<Student> _students;
-
-    public StudentRepository()
-    {
-        _students = new List<Student>();
-
-        Guid guid = new Guid("3fa85f64-5717-4562-b3fc-2c963f66afa6");
-        _students.Add(new Student { Id=guid, Name="Linux", Major="Programming"});
-    }
-
-    public void Add(Student student)
-    {
-        _students.Add(student);
-    }
-
-    public Student? Get(Guid id)
-    {
-        return _students.FirstOrDefault(s => s.Id == id);
-
-    }
-}
-
-
-public class Student
-{
-    public Student()
-    {
-        
-    }
-    public Guid Id { get; set; }
-    public string Name { get; set; }
-    public string Major { get; set; }
-}
 
 
