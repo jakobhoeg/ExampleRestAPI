@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IStudentRepository, StudentRepository>();
+builder.Services.AddSingleton<IPackageRepository, PackageRepository>();
 
 builder.Services.Configure<MongoDBRestSettings>(builder.Configuration.GetSection(nameof(MongoDBRestSettings)));
 
@@ -31,16 +31,26 @@ var summaries = new[]
 };
 
 
-app.MapPost("/students", (IStudentRepository sr, Student student) =>
+app.MapPost("/package", (IPackageRepository sr, Package package) =>
 {
-    sr.Add(student);
+    sr.Add(package);
 
 });
 
+app.MapDelete("/package/{id}", (Guid id, IPackageRepository sr) =>
+{
+    sr.Delete(id);
+});
 
-app.MapGet("/student/{id}", (Guid id, IStudentRepository sr) =>
+
+app.MapGet("/package/{id}", (Guid id, IPackageRepository sr) =>
 {
     return sr.Get(id);
+});
+
+app.MapGet("/packages", (IPackageRepository sr) =>
+{
+    return sr.GetAll();
 });
 
 

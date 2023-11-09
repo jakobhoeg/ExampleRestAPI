@@ -1,4 +1,17 @@
 db.Student.find().pretty()
+use mongodb
+db.Student.find().pretty()
+show collections
+use mongodb
+exec mongosh
+db.Student.find().pretty()
+show collections
+clear
+cls
+db.Student.find().pretty()
+show collections
+use mongodb
+db.Student.find().pretty()
 show collections
 use mongodb
 db.Student.find().pretty()
