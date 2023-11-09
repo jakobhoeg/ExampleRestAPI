@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jakob\\Source\\Repos\\ExampleRESTDOCKER\\ExampleRestAPI\\ExampleRestAPI.csproj": {}
+    "C:\\Users\\jakob\\Desktop\\Datamatiker\\3. Semester\\C#\\ExampleRestAPI\\ExampleRestAPI\\ExampleRestAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jakob\\Source\\Repos\\ExampleRESTDOCKER\\ExampleRestAPI\\ExampleRestAPI.csproj": {
+    "C:\\Users\\jakob\\Desktop\\Datamatiker\\3. Semester\\C#\\ExampleRestAPI\\ExampleRestAPI\\ExampleRestAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jakob\\Source\\Repos\\ExampleRESTDOCKER\\ExampleRestAPI\\ExampleRestAPI.csproj",
+        "projectUniqueName": "C:\\Users\\jakob\\Desktop\\Datamatiker\\3. Semester\\C#\\ExampleRestAPI\\ExampleRestAPI\\ExampleRestAPI.csproj",
         "projectName": "ExampleRestAPI",
-        "projectPath": "C:\\Users\\jakob\\Source\\Repos\\ExampleRESTDOCKER\\ExampleRestAPI\\ExampleRestAPI.csproj",
+        "projectPath": "C:\\Users\\jakob\\Desktop\\Datamatiker\\3. Semester\\C#\\ExampleRestAPI\\ExampleRestAPI\\ExampleRestAPI.csproj",
         "packagesPath": "C:\\Users\\jakob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jakob\\Source\\Repos\\ExampleRESTDOCKER\\ExampleRestAPI\\obj\\",
+        "outputPath": "C:\\Users\\jakob\\Desktop\\Datamatiker\\3. Semester\\C#\\ExampleRestAPI\\ExampleRestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jakob\\AppData\\Roaming\\NuGet\\NuGet.Config",
