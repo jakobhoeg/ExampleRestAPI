@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "xgQCVwQXmwpDARy4b0OYB/e3DNmKCkq71sExW0S/CFpKeIN9WxUOAdAfE5eM+omZt8dKaslgFOraaR9y2CJdNQ==",
+=======
+  "dgSpecHash": "OT1xkSa78ln7LvjEUg1gVUOnlnHS7oVg8PhVKsQjfhIq7tq9ot30yK2wCWuNb8XTwGE7F7KG2NltelLiVMBQvQ==",
+>>>>>>> 1a145c6304f4d03f87bbb31144675aaab7a09665
   "success": true,
-  "projectFilePath": "C:\\Users\\jakob\\Desktop\\Datamatiker\\3. Semester\\C#\\ExampleRestAPI\\ExampleRestAPI\\ExampleRestAPI.csproj",
+  "projectFilePath": "C:\\Users\\jakob\\Source\\Repos\\ExampleRESTDOCKER\\ExampleRestAPI\\ExampleRestAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakob\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\jakob\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
