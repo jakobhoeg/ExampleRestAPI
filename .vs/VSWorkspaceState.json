@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ExampleRestAPI",
-    "\\ExampleRestAPI\\Model"
+    "\\ExampleRestAPI\\Model",
+    "\\ExampleRestAPI\\Repository"
   ],
-  "SelectedNode": "\\ExampleRestAPI\\bin",
+  "SelectedNode": "\\ExampleRestAPI.sln",
   "PreviewInSolutionExplorer": false
 }

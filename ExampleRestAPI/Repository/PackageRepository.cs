@@ -35,16 +35,9 @@ namespace ExampleRestAPI.Repository
 
         public async Task Add(Package package)
         {
-            // Check if collection size is less than 2000
-            var counter = await _packages.CountAsync(p => true);
 
-            if (counter < 2000)
-            {
-                await _packages.InsertOneAsync(package);
-                return;
-            }
+            await _packages.InsertOneAsync(package);
 
-            return;
         }
 
         public async Task<Package?> Get(Guid id)
