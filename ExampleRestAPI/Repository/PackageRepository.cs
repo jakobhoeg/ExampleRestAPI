@@ -35,23 +35,32 @@ namespace ExampleRestAPI.Repository
 
         public async Task Add(Package package)
         {
-            await _packages.InsertOneAsync(package);
+            // Check if collection size is less than 2000
+            var counter = await _packages.CountAsync(p => true);
+
+            if (counter < 2000)
+            {
+                await _packages.InsertOneAsync(package);
+                return;
+            }
+
+            return;
         }
 
         public async Task<Package?> Get(Guid id)
         {
-            return await _packages.Find(s => s.Id == id).FirstOrDefaultAsync();
+            return await _packages.Find(p => p.Id == id).FirstOrDefaultAsync();
 
         }
 
         public async Task<List<Package>> GetAll()
         {
-            return await _packages.Find(s => true).ToListAsync();
+            return await _packages.Find(p => true).ToListAsync();
         }
 
         public async Task Delete(Guid id)
         {
-            await _packages.DeleteOneAsync(s => s.Id == id);
+            await _packages.DeleteOneAsync(p => p.Id == id);
         }
 
 

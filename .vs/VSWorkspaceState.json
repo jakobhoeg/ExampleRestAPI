@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ExampleRestAPI"
+    "\\ExampleRestAPI",
+    "\\ExampleRestAPI\\Model"
   ],
-  "SelectedNode": "\\ExampleRestAPI\\appsettings.json",
+  "SelectedNode": "\\ExampleRestAPI\\bin",
   "PreviewInSolutionExplorer": false
 }
